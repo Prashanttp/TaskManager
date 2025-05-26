@@ -1,7 +1,6 @@
-h1{
+h1 {
   font-family: 'Times New Roman', Times, serif;
 }
-
 
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -53,34 +52,34 @@ button:hover {
   background-color: #1565c0;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-li {
+.todo-item {
   background: #f0f0f0;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-li.done {
+.todo-item input.text {
+  border: none;
+  background: none;
+  font-size: 16px;
+  flex: 1;
+}
+
+.todo-item input.text.done {
   text-decoration: line-through;
   color: grey;
 }
 
-.actions button {
-  margin-left: 5px;
-  background-color: transparent;
-  color: #555;
-  border: none;
+.action-items i {
+  margin-left: 10px;
   cursor: pointer;
+  color: #666;
 }
-.actions button:hover {
+
+.action-items i:hover {
   color: #000;
 }
